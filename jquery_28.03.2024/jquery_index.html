@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+           $("#blueBtn").click(function(){
+            $("#rectangle1").css("background-color","blue");
+           });
+           $("#yellowBtn").click(function(){
+            $("#rectangle1").css("background-color","yellow");
+           });
+           $("#greenBtn").click(function(){
+            $("#rectangle1").css("background-color","green");
+           });
+           $("#clearBtn").click(function(){
+            $("#rectangle1").css("background-color","white");
+           });
+        });
+    </script>
+</head>
+<body>
+    
+    <button id="blueBtn">Blue</button>
+    <button id="yellowBtn">Yellow</button>
+    <button id="greenBtn">Green</button>
+    <button id="clearBtn">Clear</button>
+
+    <div id="rectangle1" style="width: 200px;
+    height: 200px; background-color: white;
+    border: 1px solid black; margin-bottom: 10px;"></div>
+</body>
+</html>

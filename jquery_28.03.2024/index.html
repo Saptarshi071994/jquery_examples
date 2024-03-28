@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Color Changing Rectangle</title>
+<style>
+    #rectangle {
+        width: 200px;
+        height: 200px;
+        background-color: white;
+        border: 1px solid black;
+        margin-bottom: 10px;
+    }
+</style>
+</head>
+<body>
+<div id="rectangle"></div>
+
+<select id="colorSelect">
+    <option value="white">Select Color</option>
+    <option value="blue">Blue</option>
+    <option value="yellow">Yellow</option>
+    <option value="green">Green</option>
+    <option value="">Clear</option>
+</select>
+
+<script>
+    const rectangle = document.getElementById("rectangle");
+    const colorSelect = document.getElementById("colorSelect");
+
+    colorSelect.addEventListener("change", function() {
+        const selectedColor = colorSelect.value;
+        rectangle.style.backgroundColor = selectedColor;
+    });
+</script>
+</body>
+</html>

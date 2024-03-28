@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+           $("#blueRadio").click(function(){
+            $("#rectangle1").css("background-color","blue");
+           });
+           $("#yellowRadio").click(function(){
+            $("#rectangle1").css("background-color","yellow");
+           });
+           $("#greenRadio").click(function(){
+            $("#rectangle1").css("background-color","green");
+           });
+           $("#clearRadio").click(function(){
+            $("#rectangle1").css("background-color","white");
+           });
+        });
+    </script>
+</head>
+<body>
+
+    <input type="radio" name="color" id="blueRadio"
+    value="blue">Blue
+    
+    <input type="radio" name="color" id="yellowRadio"
+    value="yellow"> Yellow
+
+    <input type="radio" name="color" id="greenRadio"
+    value="green"> Green
+
+    <input type="radio" name="color" id="clearRadio"
+    value="clear"> Clear
+
+    <div id="rectangle1" style="width: 200px; height: 200px; background-color: white;
+    border: 1px solid black; margin-bottom: 10px;"></div>
+</body>
+</html>
